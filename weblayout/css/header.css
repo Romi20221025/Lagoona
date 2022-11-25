@@ -1,0 +1,171 @@
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+}
+
+.header__phone {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #666;
+  padding-left: 38px;
+  text-decoration: none;
+}
+
+.header__cabinet {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 24px;
+  color: #CC9933;
+  text-decoration: none;
+}
+
+.header__cabinet:hover {
+  cursor: pointer;
+  color: #A47312;
+}
+
+.header__cabinet:hover>svg>path {
+  fill: #A47312;
+}
+
+.header__cabinet__text {
+  padding-left: 7px;
+}
+
+.menu__top {
+  border-radius: 15px;
+  padding: 0 45px;
+  margin: 14px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1170px;
+  height: 70px;
+  color: #666;
+  background-color: #FFF;
+}
+
+.menu__top__left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1170px;
+  height: 16px;
+  margin: 0 auto;
+  color: #666;
+}
+
+.menu__top__left>a {
+  text-decoration: none;
+  color: #666;
+}
+
+.menu__top__right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 44px;
+  width: 1170px;
+  height: 16px;
+  margin-left: 114px;
+  color: #666;
+  text-decoration: none;
+}
+
+.special {
+  width: 1170px;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+/* Ссылка с границей */
+.menu__top__right__link {
+  color: #CC9933;
+  text-decoration: none;
+  border: 1px solid #CC9933;
+  padding: 13px 20px;
+  border-radius: 10px;
+}
+
+/* спецпредложение блок */
+
+.main {
+  max-width: 1170px;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+.spec__content {
+  display: flex;
+  align-items: center;
+  width: 573px;
+}
+
+.spec__heading {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  padding: 70px 0 20px 40px;
+  color: #333;
+}
+
+.spec__left,
+.spec__right {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  margin: 14px;
+}
+
+.spec__left {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.spec__top,
+.spec__bottom,
+.spec__right {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 40px 45px;
+  color: #FFF;
+}
+
+.spec__top > img,
+.spec__bottom > img,
+.spec__right > img {
+  display: block;
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.spec__top__heading {
+  width: 700;
+  height: 40px;
+  line-height: 40px;
+}
+.spec__top__link {
+  width: 100px;
+  height: 16px;
+}
+
