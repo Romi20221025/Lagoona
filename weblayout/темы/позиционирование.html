@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Position: relative(родительский) + absolute(дочерний) </h1>
+  <div class="position relative">
+    relative
+    <div class="position__item absolute next">absolute</div>
+    <div class="position__item absolute">absolute</div>
+    <div class="position__item absolute third">absolute</div>
+  </div>
+  <h1>Position: relative</h1>
+  <div class="position__item relative rel1">relative</div>
+  <div class="position__item relative rel1">relative</div>
+  <div class="fixed">fixed</div>
+  <div class="absolute position__item outside">absolute</div>
+  <h1>Position: sticky</h1>
+  <div class="position__item sticky">sticky</div>
+  <div class="heigthmore">asdf</div>
+</body>
+<style>
+  .position {
+    width: 200px;
+    height: 200px;
+    background-color: blanchedalmond;
+    z-index: 0;
+    overflow: auto;
+  }
+  .position__item {
+    width: 50px;
+    height: 50px;
+    background-color: brown;
+    z-index: 2;
+  }
+
+  .relative {
+    position: relative;
+  }
+  .absolute {
+    position: absolute;
+    top: 10px;
+    /* bottom: 10px; */
+    right: -10px;
+    /* left: 10px; */
+  }
+  .next {
+    right: 30px;
+    bottom: 50px;
+    top: unset;
+    background-color: rgb(109, 30, 30);
+    z-index: 1;
+  }
+  .third {
+    bottom: 10px;
+    left: 140px;
+    top: unset;
+    right: unset;
+    background-color: rgb(59, 16, 16);
+  }
+
+  /* relative */
+  .rel1 {
+    width: 200px;
+    height: 200px;
+    right: -30px;
+  }
+
+  /* fixed */
+  .fixed {
+    position: fixed;
+    background-color: red;
+    top: 100px;
+    bottom: 100px;
+    left: 200px;
+    right: 200px;
+    z-index: 2;
+  }
+
+  /* absolute */
+  .outside {
+    top: 50px;
+    left: 50px;
+    bottom: unset;
+    right: unset;
+  }
+
+  /* sticky */
+  .sticky {
+    position: sticky;
+    width: 100%;
+    top: 10px;
+  }
+  .heigthmore {
+    height: 2000px;
+    width: 100px;
+    background-color: aqua;
+  }
+</style>
+</html>
