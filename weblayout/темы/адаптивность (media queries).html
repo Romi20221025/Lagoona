@@ -1,0 +1,61 @@
+<div class="forMobile adaptivity">Mobile</div>
+<div class="forDesktop adaptivity">Desktop</div>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .adaptivity {
+    background-color: brown;
+    height: 300px;
+  }
+
+  .forMobile {
+    display: none;
+  }
+
+  .forDesktop {
+    display: block;
+  }
+
+  @media (max-width: 1440px) {
+    .adaptivity {
+      background-color: blue;
+    }
+  }
+
+  @media (max-width: 1280px) {
+    .adaptivity {
+      background-color: yellow;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .adaptivity {
+      background-color: green;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .adaptivity {
+      background-color: orange;
+    }
+
+    .forMobile {
+      display: block;
+    }
+
+    .forDesktop {
+      display: none;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .adaptivity {
+      background-color: red;
+    }
+  }
+</style>

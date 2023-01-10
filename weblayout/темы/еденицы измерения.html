@@ -1,0 +1,112 @@
+<!-- 
+  px - пиксели
+  % - проценты (1/100)
+
+  em - относительная величина
+  rem - абсолютная величина (16px) (РЕКОМЕНДОВАНО)
+
+  vh - view height (1/100 относительно высоты браузерного окна)
+  vw - view width (1/100 относительно ширины браузерного окна)
+
+  calc()
+-->
+<div class="first">
+  <p>Hello</p>
+  <div class="second">
+    <p>Hello</p>
+    <div class="third">
+      <p>Hello</p>
+    </div>
+  </div>
+</div>
+
+<div class="view">
+  <p class="viewP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quis mollitia suscipit maxime
+    tenetur, provident
+    quia cum ea facere quae voluptatem repudiandae beatae sint odio dolorum doloribus. Ut, voluptate nesciunt? Lorem
+    ipsum dolor sit amet consectetur adipisicing elit. Nostrum quis mollitia suscipit maxime tenetur, provident quia cum
+    ea facere quae voluptatem repudiandae beatae sint odio dolorum doloribus. Ut, voluptate nesciunt? Lorem ipsum dolor
+    sit amet consectetur adipisicing elit. Nostrum quis mollitia suscipit maxime tenetur, provident quia cum ea facere
+    quae voluptatem repudiandae beatae sint odio dolorum doloribus. Ut, voluptate nesciunt? Lorem ipsum dolor sit amet
+    consectetur adipisicing elit. Nostrum quis mollitia suscipit maxime tenetur, provident quia cum ea facere quae
+    voluptatem repudiandae beatae sint odio dolorum doloribus. Ut, voluptate nesciunt? Lorem ipsum dolor sit amet
+    consectetur adipisicing elit. Nostrum quis mollitia suscipit maxime tenetur, provident quia cum ea facere quae
+    voluptatem repudiandae beatae sint odio dolorum doloribus. Ut, voluptate nesciunt? Lorem ipsum dolor sit amet
+    consectetur adipisicing elit. Nostrum quis mollitia suscipit maxime tenetur, provident quia cum ea facere quae
+    voluptatem repudiandae beatae sint odio dolorum doloribus. Ut, voluptate nesciunt? Lorem ipsum dolor sit amet
+    consectetur adipisicing elit. Nostrum quis mollitia suscipit maxime tenetur, provident quia cum ea facere quae
+    voluptatem repudiandae beatae sint odio dolorum doloribus. Ut, voluptate nesciunt? Lorem ipsum dolor sit amet
+    consectetur adipisicing elit. Nostrum quis mollitia suscipit maxime tenetur, provident quia cum ea facere quae
+    voluptatem repudiandae beatae sint odio dolorum doloribus. Ut, voluptate nesciunt?</p>
+</div>
+<div class="view">
+  <p class="viewP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quis mollitia suscipit maxime
+    tenetur, provident
+    quia cum ea facere quae voluptatem repudiandae beatae sint odio dolorum doloribus. Ut, voluptate nesciunt? Lorem
+    ipsum dolor sit amet consectetur adipisicing elit. Nostrum quis mollitia suscipit maxime tenetur, provident quia cum
+    ea facere quae voluptatem repudiandae beatae sint odio dolorum doloribus. Ut, voluptate nesciunt? Lorem ipsum dolor
+    sit amet consectetur adipisicing elit. Nostrum quis mollitia suscipit maxime tenetur, provident quia cum ea facere
+    quae voluptatem repudiandae beatae sint odio dolorum doloribus. Ut, voluptate nesciunt? Lorem ipsum dolor sit amet
+    consectetur adipisicing elit. Nostrum quis mollitia suscipit maxime tenetur, provident quia cum ea facere quae
+    voluptatem repudiandae beatae sint odio dolorum doloribus. Ut, voluptate nesciunt? Lorem ipsum dolor sit amet
+    consectetur adipisicing elit. Nostrum quis mollitia suscipit maxime tenetur, provident quia cum ea facere quae
+    voluptatem repudiandae beatae sint odio dolorum doloribus. Ut, voluptate nesciunt? Lorem ipsum dolor sit amet
+    consectetur adipisicing elit. Nostrum quis mollitia suscipit maxime tenetur, provident quia cum ea facere quae
+    voluptatem repudiandae beatae sint odio dolorum doloribus. Ut, voluptate nesciunt? Lorem ipsum dolor sit amet
+    consectetur adipisicing elit. Nostrum quis mollitia suscipit maxime tenetur, provident quia cum ea facere quae
+    voluptatem repudiandae beatae sint odio dolorum doloribus. Ut, voluptate nesciunt? Lorem ipsum dolor sit amet
+    consectetur adipisicing elit. Nostrum quis mollitia suscipit maxime tenetur, provident quia cum ea facere quae
+    voluptatem repudiandae beatae sint odio dolorum doloribus. Ut, voluptate nesciunt?</p>
+</div>
+<div class="out">
+  <div class="in">
+    Hello
+  </div>
+</div>
+
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    font-size: 10px;
+  }
+
+  .first,
+  .second,
+  .third {
+    border: 1px solid black;
+    padding: 2rem;
+  }
+
+  .first {
+    font-size: 2rem;
+  }
+
+  .second {
+    font-size: 2rem;
+  }
+
+  .third {
+    font-size: 2rem;
+  }
+
+  .viewP {
+    font-size: calc(1.6rem - .5vw);
+  }
+
+  .out {
+    background-color: rgb(218, 101, 101);
+    height: 100vh;
+    width: 120vw;
+  }
+
+  .in {
+    height: 200px;
+    background-color: brown;
+    text-align: center;
+  }
+</style>
