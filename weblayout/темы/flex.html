@@ -1,0 +1,181 @@
+<div class="container">
+  <div class="item1"></div>
+  <div class="item2"></div>
+  <div class="item3"></div>
+  <div class="item4"></div>
+</div>
+<h1>align-items</h1>
+<h2>align-items: center</h2>
+<div class="container1 container">
+  <div class="item1"></div>
+  <div class="item2"></div>
+  <div class="item3"></div>
+  <div class="item4"></div>
+</div>
+<h2>align-items: flex-end</h2>
+<div class="container2 container">
+  <div class="item1"></div>
+  <div class="item2"></div>
+  <div class="item3"></div>
+  <div class="item4"></div>
+</div>
+<h2>align-items: flex-start</h2>
+<div class="container3 container">
+  <div class="item1"></div>
+  <div class="item2"></div>
+  <div class="item3"></div>
+  <div class="item4"></div>
+</div>
+<h2>align-items: stretch</h2>
+<div class="container4 container">
+  <div class="item1"></div>
+  <div class="item2"></div>
+  <div class="item3"></div>
+  <div class="item4"></div>
+</div>
+<h1>justify-content</h1>
+<h2>justify-content: center</h2>
+<div class="container5 container">
+  <div class="item1"></div>
+  <div class="item2"></div>
+  <div class="item3"></div>
+  <div class="item4"></div>
+</div>
+<h2>justify-content: flex-end</h2>
+<div class="container6 container">
+  <div class="item1"></div>
+  <div class="item2"></div>
+  <div class="item3"></div>
+  <div class="item4"></div>
+</div>
+<h2>justify-content: flex-start</h2>
+<div class="container7 container">
+  <div class="item1"></div>
+  <div class="item2"></div>
+  <div class="item3"></div>
+  <div class="item4"></div>
+</div>
+<h2>justify-content: space-between</h2>
+<div class="container8 container">
+  <div class="item1"></div>
+  <div class="item2"></div>
+  <div class="item3"></div>
+  <div class="item4"></div>
+</div>
+<h2>justify-content: space-around</h2>
+<div class="container9 container">
+  <div class="item1"></div>
+  <div class="item2"></div>
+  <div class="item3"></div>
+  <div class="item4"></div>
+</div>
+<h2>justify-content: space-evenly</h2>
+<div class="container10 container">
+  <div class="item1"></div>
+  <div class="item2"></div>
+  <div class="item3"></div>
+  <div class="item4"></div>
+</div>
+<h1>flex-direction</h1>
+<h2>flex-direction: row</h2>
+<div class="container11 container">
+  <div class="item1"></div>
+  <div class="item2"></div>
+  <div class="item3"></div>
+  <div class="item4"></div>
+</div>
+<h2>flex-direction: row-reverse</h2>
+<div class="container12 container">
+  <div class="item1"></div>
+  <div class="item2"></div>
+  <div class="item3"></div>
+  <div class="item4"></div>
+</div>
+<h2>flex-direction: column</h2>
+<div class="container13 container">
+  <div class="item1"></div>
+  <div class="item2"></div>
+  <div class="item3"></div>
+  <div class="item4"></div>
+</div>
+<h2>flex-direction: column-reverse</h2>
+<div class="container14 container">
+  <div class="item1"></div>
+  <div class="item2"></div>
+  <div class="item3"></div>
+  <div class="item4"></div>
+</div>
+<style>
+  .item1, .item2, .item3, .item4 {
+    background-color: blue;
+  }
+  .item1 {
+    width: 100px;
+    height: 150px;
+  }
+  .item2 {
+    width: 150px;
+    min-height: 100px;
+  }
+  .item3 {
+    width: 120px;
+    height: 170px;
+  }
+  .item4 {
+    width: 170px;
+    height: 120px;
+  }
+  .container {
+    display: flex;
+    height: 200px;
+    width: 1000px;
+    gap: 20px;
+    border: 1px solid grey;
+  }
+  .container1 {
+    align-items: center;
+  }
+  .container2 {
+    align-items: flex-end;
+  }
+  .container3 {
+    align-items: flex-start;
+  }
+  .container4 {
+    align-items: stretch;
+  }
+  .container5 {
+    justify-content: center;
+  }
+  .container6 {
+    justify-content: flex-end;
+  }
+  .container7 {
+    justify-content: flex-start;
+  }
+  .container8 {
+    justify-content: space-between;
+  }
+  .container9 {
+    justify-content: space-around;
+  }
+  .container10 {
+    justify-content: space-evenly;
+  }
+  .container11 {
+    flex-direction: row;
+  }
+  .container12 {
+    flex-direction: row-reverse;
+  }
+  .container13 {
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+  }
+  .container14 {
+    flex-direction: column-reverse;
+    width: fit-content;
+    height: 1000px;
+  }
+</style>
