@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Muller';
-  src: url('../img/MullerRegular.woff') format('woff');
+  src: url('../img/MullerRegular.ttf');
 }
 
 * {

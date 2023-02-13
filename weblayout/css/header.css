@@ -105,7 +105,7 @@
 .main {
   max-width: 1170px;
   margin: 0 auto;
-  font-family: sans-serif;
+  font-family: inherit;
 }
 
 .spec__content {
@@ -195,3 +195,34 @@
   margin-left: 8px;
 }
 
+.paragraph__text {
+height: 192px;
+width: 888px;
+left: 375px;
+top: 984px;
+border-radius: nullpx;
+position: absolute;
+width: 888px;
+height: 192px;
+left: 375px;
+top: 984px;
+
+font-family: 'Muller';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 200%;
+/* or 32px */
+
+
+color: #000000;
+
+}
+
+.spec__content2 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 540px;
+  gap: 24px;
+}

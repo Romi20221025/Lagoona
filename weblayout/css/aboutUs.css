@@ -1,0 +1,20 @@
+.aboutUs {
+  padding-top: 70px;
+  font-family: inherit;
+}
+.aboutUs__heading {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 400;
+  color: #333333;
+  padding-left: calc(415px - 375px);
+  padding-bottom: 20px;
+}
+.aboutUs__text {
+  width: 888px;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+  color: #000000;
+  font-family: inherit;
+}
